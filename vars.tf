@@ -9,7 +9,7 @@ variable "vpc_name" {
 variable "cidr" {
   type = string
   validation {
-    condition     = can(regex("^([0-9]{1,3}\\.){3}[0-9]{1,3}($|/(16))$", var.pod_cidr))
+    condition     = can(regex("^([0-9]{1,3}\\.){3}[0-9]{1,3}($|/(16))$", var.cidr))
     error_message = "Vpc_cidr value must be greater than 172.0.0.0/16."
   }
 }
