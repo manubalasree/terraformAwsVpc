@@ -25,3 +25,6 @@ variable "private_subnets" {
   type = list(string)
 }
 
+variable "vpc_tags" {
+  type = map(string)  
+}
