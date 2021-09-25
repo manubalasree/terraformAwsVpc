@@ -7,6 +7,8 @@ terraform init -backend-config="<buckey name>" \
 -backend-config="encrypt=true" \
 -backend-config="kms_key_id=<key id>"
 */
+
+#backend encrypted with customer managed KMS
 terraform {
   backend "s3" {}
 }
