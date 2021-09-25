@@ -6,8 +6,8 @@ module vpc {
   name            = var.vpc_name
   cidr            = var.cidr 
   azs             = var.azs
-  public_subnets  = ["10.0.1.0/24", "10.0.2.0/24"]
-  private_subnets = ["10.0.11.0/24", "10.0.12.0/24"]
+  public_subnets  = var.public_subnets
+  private_subnets = var.private_subnets
 
   # Have one NAT Gateway per AZ to give private subnets access to the external internet
   enable_nat_gateway     = true
