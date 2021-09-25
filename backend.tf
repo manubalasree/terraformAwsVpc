@@ -2,7 +2,7 @@
 
 terraform {
   backend "s3" {
-    bucket         = "tfs3backend-639232547460Info"
+    bucket         = "tfs3backend-639232547460"
     key            = "terraformawsvpc/terraform.tfstate"
     region         = "us-east-2"
     encrypt        =  true
